@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "listener_information",
+    "name": "listener_playlist",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/l/listener/1"
+        "url": "web:4000/l/listenerPlaylist/2/"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Listener Profile",
+    "pageId": "Listener Home",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Listener Profile_listener_information",
+  "id": "Listener Home_listener_playlist",
   "deleted": false,
-  "gitSyncId": "643f127250f2ce5995d33a6f_643f128450f2ce5995d33a80"
+  "gitSyncId": "643f127250f2ce5995d33a6f_643f19b250f2ce5995d33a89"
 }
