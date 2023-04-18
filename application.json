@@ -19,6 +19,14 @@
     {
       "id": "Listener Song",
       "isDefault": false
+    },
+    {
+      "id": "Artist Home",
+      "isDefault": false
+    },
+    {
+      "id": "Artist Manage Song",
+      "isDefault": false
     }
   ],
   "viewMode": false,
