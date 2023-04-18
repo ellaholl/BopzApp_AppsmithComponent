@@ -1,8 +1,12 @@
 {
   "pages": [
     {
-      "id": "Page1",
+      "id": "Listener Home",
       "isDefault": true
+    },
+    {
+      "id": "Listener Profile",
+      "isDefault": false
     }
   ],
   "viewMode": false,
