@@ -34,6 +34,9 @@
   "unreadCommentThreads": 0,
   "color": "#D9E7FF",
   "icon": "hospital",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
