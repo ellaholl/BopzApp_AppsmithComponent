@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "currentplan_info",
+    "name": "get_artist_info",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/l/listenerPlan/2"
+        "url": "web:4000/a/artist/{{artist_id.text}}"
       },
       "invalids": [],
       "messages": [],
@@ -36,18 +36,24 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "datasourceUrl"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "artist_id.text"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "null_currentplan_info",
+  "id": "null_get_artist_info",
   "deleted": false,
-  "gitSyncId": "643f127250f2ce5995d33a6f_643f241350f2ce5995d33a92"
+  "gitSyncId": "643ee338e0326d1ebb6e2997_643ee82de0326d1ebb6e29a7"
 }

@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "add_new_song",
+    "name": "delete_artist_song",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/a/addSong"
+        "url": "web:4000/a/RemoveSong/{{song_id_for_delete.text}}"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,6 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Artist_Updates",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,9 +28,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{new_song_info.data}}",
+      "body": "",
       "bodyFormData": [],
-      "httpMethod": "POST",
+      "httpMethod": "DELETE",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -39,27 +38,27 @@
         }
       ],
       "formData": {
-        "apiContentType": "application/json"
+        "apiContentType": "none"
       }
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "body"
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "new_song_info.data"
+      "song_id_for_delete.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Artist_Updates_add_new_song",
+  "id": "null_delete_artist_song",
   "deleted": false,
-  "gitSyncId": "643ee338e0326d1ebb6e2997_643efa3be0326d1ebb6e29c0"
+  "gitSyncId": "643ee338e0326d1ebb6e2997_643eed02e0326d1ebb6e29ae"
 }
