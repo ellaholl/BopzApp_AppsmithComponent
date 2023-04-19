@@ -16,13 +16,13 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Listener Playlist Songs",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
+      "body": "",
       "bodyFormData": [],
       "httpMethod": "GET",
       "selfReferencingDataPaths": [],
@@ -46,7 +46,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Listener Playlist Songs_selected_song",
+  "id": "null_selected_song",
   "deleted": false,
   "gitSyncId": "643f127250f2ce5995d33a6f_643f284350f2ce5995d33a99"
 }
