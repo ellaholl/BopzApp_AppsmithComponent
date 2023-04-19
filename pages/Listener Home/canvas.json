@@ -118,7 +118,7 @@
                 }
               ],
               "labelPosition": "Top",
-              "options": "{{listener_playlist.data}}/",
+              "options": "{{listener_playlist.data.map( p => ({label:p.Name, value:p.PlaylistID}))}}",
               "placeholderText": "Select option",
               "isDisabled": false,
               "key": "cp6n7wffpf",

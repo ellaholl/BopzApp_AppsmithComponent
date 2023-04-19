@@ -27,6 +27,10 @@
     {
       "id": "Artist Manage Song",
       "isDefault": false
+    },
+    {
+      "id": "Home Page",
+      "isDefault": false
     }
   ],
   "viewMode": false,
