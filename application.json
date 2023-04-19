@@ -5,27 +5,6 @@
       "isDefault": true
     },
     {
-      "id": "Listener Profile",
-      "isDefault": false
-    },
-    {
-      "id": "Listener Subscription Type",
-      "isDefault": false
-    },
-    {
-      "id": "Listener Playlist Songs",
-      "isDefault": false
-    },
-    {
-      "id": "Listener Song",
-      "isDefault": false
-    },
-    {
-      "id": "Artist Home",
-      "isDefault": false
-    },
-    {
-      "id": "Artist Manage Song",
       "isDefault": false
     }
   ],
