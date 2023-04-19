@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 480,
+          "bottomRow": 460,
           "containerStyle": "none",
           "snapRows": 55,
           "parentRowSpace": 1,
@@ -35,7 +35,7 @@
                 "label"
               ],
               "topRow": 0,
-              "bottomRow": 7,
+              "bottomRow": 5,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -77,22 +77,23 @@
               "originalTopRow": 0,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 7,
+              "originalBottomRow": 5,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
             {
               "boxShadow": "none",
-              "widgetName": "Image1",
+              "widgetName": "song_image",
               "displayName": "Image",
               "iconSVG": "/static/media/icon.52d8fb963abcb95c79b10f1553389f22.svg",
-              "topRow": 9,
-              "bottomRow": 38,
+              "topRow": 7,
+              "bottomRow": 36,
               "parentRowSpace": 10,
               "type": "IMAGE_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 17.125,
+              "dynamicTriggerPathList": [],
               "imageShape": "RECTANGLE",
               "leftColumn": 1,
               "dynamicBindingPathList": [
@@ -102,7 +103,7 @@
               ],
               "defaultImage": "https://assets.appsmith.com/widgets/default.png",
               "key": "5f5am0qkbk",
-              "image": "",
+              "image": "https://picsum.photos/1000",
               "isDeprecated": false,
               "rightColumn": 41,
               "objectFit": "cover",
@@ -114,13 +115,13 @@
               "isLoading": false,
               "maxZoomLevel": 1,
               "enableDownload": false,
-              "originalTopRow": 9,
+              "originalTopRow": 7,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 38,
+              "originalBottomRow": 36,
               "enableRotation": false
             },
             {
-              "widgetName": "Audio1",
+              "widgetName": "audio_play",
               "displayName": "Audio",
               "iconSVG": "/static/media/icon.cb54df7a09016b0af5e520895be927b9.svg",
               "searchTags": [
@@ -129,8 +130,8 @@
                 "wave",
                 "player"
               ],
-              "topRow": 38,
-              "bottomRow": 43,
+              "topRow": 36,
+              "bottomRow": 41,
               "parentRowSpace": 10,
               "type": "AUDIO_WIDGET",
               "hideCard": false,
@@ -150,8 +151,8 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 38,
-              "originalBottomRow": 43,
+              "originalTopRow": 36,
+              "originalBottomRow": 41,
               "autoPlay": false
             },
             {
@@ -164,8 +165,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 44,
-              "bottomRow": 48,
+              "topRow": 42,
+              "bottomRow": 46,
               "parentRowSpace": 10,
               "groupButtons": {
                 "groupButton1": {
@@ -236,9 +237,9 @@
                   "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
                 }
               },
-              "originalTopRow": 44,
+              "originalTopRow": 42,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 48,
+              "originalBottomRow": 46,
               "buttonVariant": "PRIMARY"
             }
           ]

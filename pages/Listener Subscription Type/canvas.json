@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 460,
+          "bottomRow": 470,
           "containerStyle": "none",
           "snapRows": 55,
           "parentRowSpace": 1,
@@ -36,7 +36,7 @@
                 "group"
               ],
               "topRow": 0,
-              "bottomRow": 46,
+              "bottomRow": 47,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -57,7 +57,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 460,
+                  "bottomRow": 470,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -76,8 +76,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 1,
-                      "bottomRow": 7,
+                      "topRow": 0,
+                      "bottomRow": 4,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -125,6 +125,7 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "update_plan",
+                      "onClick": "{{update_planID.run(() => showAlert('Success!','success'), () => showAlert('Failed to change plan','error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -132,13 +133,17 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 32,
-                      "bottomRow": 36,
+                      "topRow": 21,
+                      "bottomRow": 26,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 48,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 28,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -151,7 +156,7 @@
                       "isDisabled": false,
                       "key": "6r4hy9dgat",
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 42,
                       "isDefaultClickDisabled": true,
                       "widgetId": "6p5geb751e",
                       "minWidth": 120,
@@ -179,8 +184,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 32,
-                      "bottomRow": 36,
+                      "topRow": 41,
+                      "bottomRow": 45,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -189,7 +194,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 35,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -202,7 +207,7 @@
                       "isDisabled": false,
                       "key": "6r4hy9dgat",
                       "isDeprecated": false,
-                      "rightColumn": 48,
+                      "rightColumn": 14,
                       "isDefaultClickDisabled": true,
                       "widgetId": "i19xe00p5n",
                       "minWidth": 120,
@@ -223,33 +228,12 @@
                       "borderColor": "#E0DEDE",
                       "isVisibleDownload": true,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 8,
+                      "topRow": 4,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "ROW_LEVEL",
                       "animateLoading": true,
                       "dynamicBindingPathList": [
-                        {
-                          "key": "primaryColumns.step.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.task.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.status.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.action.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.action.buttonColor"
-                        },
-                        {
-                          "key": "primaryColumns.action.borderRadius"
-                        },
-                        {
-                          "key": "primaryColumns.action.boxShadow"
-                        },
                         {
                           "key": "accentColor"
                         },
@@ -258,10 +242,40 @@
                         },
                         {
                           "key": "boxShadow"
+                        },
+                        {
+                          "key": "tableData"
+                        },
+                        {
+                          "key": "primaryColumns.AdminID.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.Age.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.Cost.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.Email.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.Length.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.ListenerID.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.Name.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.SubscriptionTypeID.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.Username.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
-                      "leftColumn": 0,
+                      "leftColumn": 1,
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
                       "showInlineEditingOptionDropdown": true,
@@ -296,26 +310,34 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1681839298637,
+                      "columnUpdatedAt": 1681860593715,
                       "originalBottomRow": 44,
+                      "primaryColumnId": "ListenerID",
                       "defaultSelectedRowIndices": [
                         0
                       ],
                       "widgetName": "current_subscriptioninfo",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "step",
-                        "task",
-                        "status",
-                        "action"
+                        "SubscriptionTypeID",
+                        "Name",
+                        "Length",
+                        "Cost",
+                        "AdminID",
+                        "Age",
+                        "Email",
+                        "ListenerID",
+                        "Username"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
-                      "bottomRow": 44,
+                      "bottomRow": 18,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 70,
-                        "status": 85
+                        "status": 85,
+                        "Name": 100,
+                        "SubscriptionTypeID": 192
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -323,130 +345,276 @@
                       "dynamicTriggerPathList": [],
                       "borderWidth": "1",
                       "primaryColumns": {
-                        "step": {
+                        "AdminID": {
+                          "allowCellWrapping": false,
                           "index": 0,
                           "width": 150,
-                          "id": "step",
-                          "originalId": "step",
-                          "alias": "step",
+                          "originalId": "AdminID",
+                          "id": "AdminID",
+                          "alias": "AdminID",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
-                          "columnType": "text",
+                          "columnType": "number",
+                          "textColor": "",
                           "textSize": "0.875rem",
+                          "fontStyle": "",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
-                          "isCellVisible": true,
+                          "isVisible": false,
+                          "isDisabled": false,
                           "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Current Plan ID",
-                          "computedValue": "{{current_subscriptioninfo.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"step\"]))}}",
-                          "validation": {},
+                          "label": "AdminID",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{current_subscriptioninfo.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"AdminID\"]))}}",
                           "sticky": "",
-                          "labelColor": "#FFFFFF",
-                          "isEditable": false
+                          "validation": {},
+                          "cellBackground": ""
                         },
-                        "task": {
+                        "Age": {
+                          "allowCellWrapping": false,
                           "index": 1,
                           "width": 150,
-                          "id": "task",
-                          "originalId": "task",
-                          "alias": "task",
+                          "originalId": "Age",
+                          "id": "Age",
+                          "alias": "Age",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
+                          "textColor": "",
                           "textSize": "0.875rem",
+                          "fontStyle": "",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
-                          "isCellVisible": true,
+                          "isVisible": false,
+                          "isDisabled": false,
                           "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
                           "isDerived": false,
-                          "label": "",
-                          "computedValue": "{{current_subscriptioninfo.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"task\"]))}}",
-                          "validation": {},
+                          "label": "Age",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{current_subscriptioninfo.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Age\"]))}}",
                           "sticky": "",
-                          "labelColor": "#FFFFFF",
-                          "isEditable": false
+                          "validation": {},
+                          "cellBackground": ""
                         },
-                        "status": {
+                        "Cost": {
+                          "allowCellWrapping": false,
                           "index": 2,
                           "width": 150,
-                          "id": "status",
-                          "originalId": "status",
-                          "alias": "status",
+                          "originalId": "Cost",
+                          "id": "Cost",
+                          "alias": "Cost",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Cost",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{current_subscriptioninfo.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Cost\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "Email": {
+                          "allowCellWrapping": false,
+                          "index": 3,
+                          "width": 150,
+                          "originalId": "Email",
+                          "id": "Email",
+                          "alias": "Email",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
+                          "textColor": "",
                           "textSize": "0.875rem",
+                          "fontStyle": "",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
-                          "isCellVisible": true,
+                          "isVisible": false,
+                          "isDisabled": false,
                           "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
                           "isDerived": false,
-                          "label": "status",
-                          "computedValue": "{{current_subscriptioninfo.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
-                          "validation": {},
+                          "label": "Email",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{current_subscriptioninfo.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Email\"]))}}",
                           "sticky": "",
-                          "labelColor": "#FFFFFF",
-                          "isEditable": false
+                          "validation": {},
+                          "cellBackground": ""
                         },
-                        "action": {
-                          "index": 3,
+                        "Length": {
+                          "allowCellWrapping": false,
+                          "index": 4,
                           "width": 150,
-                          "id": "action",
-                          "originalId": "action",
-                          "alias": "action",
+                          "originalId": "Length",
+                          "id": "Length",
+                          "alias": "Length",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
-                          "columnType": "button",
+                          "columnType": "number",
+                          "textColor": "",
                           "textSize": "0.875rem",
+                          "fontStyle": "",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
-                          "isCellVisible": true,
-                          "isCellEditable": false,
                           "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
                           "isDerived": false,
-                          "label": "action",
-                          "onClick": "{{currentRow.step === '#1' ? showAlert('Done', 'success') : currentRow.step === '#2' ? navigateTo('https://docs.appsmith.com/core-concepts/connecting-to-data-sources/querying-a-database',undefined,'NEW_WINDOW') : navigateTo('https://docs.appsmith.com/core-concepts/displaying-data-read/display-data-tables',undefined,'NEW_WINDOW')}}",
-                          "computedValue": "{{current_subscriptioninfo.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"action\"]))}}",
-                          "validation": {},
+                          "label": "Length",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{current_subscriptioninfo.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Length\"]))}}",
                           "sticky": "",
-                          "labelColor": "#FFFFFF",
-                          "buttonColor": "{{current_subscriptioninfo.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
-                          "borderRadius": "{{current_subscriptioninfo.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                          "boxShadow": "{{current_subscriptioninfo.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}"
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "ListenerID": {
+                          "allowCellWrapping": false,
+                          "index": 5,
+                          "width": 150,
+                          "originalId": "ListenerID",
+                          "id": "ListenerID",
+                          "alias": "ListenerID",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "ListenerID",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{current_subscriptioninfo.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ListenerID\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "Name": {
+                          "allowCellWrapping": false,
+                          "index": 6,
+                          "width": 150,
+                          "originalId": "Name",
+                          "id": "Name",
+                          "alias": "Name",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Name",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{current_subscriptioninfo.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Name\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "SubscriptionTypeID": {
+                          "allowCellWrapping": false,
+                          "index": 7,
+                          "width": 150,
+                          "originalId": "SubscriptionTypeID",
+                          "id": "SubscriptionTypeID",
+                          "alias": "SubscriptionTypeID",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "SubscriptionTypeID",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{current_subscriptioninfo.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SubscriptionTypeID\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "Username": {
+                          "allowCellWrapping": false,
+                          "index": 8,
+                          "width": 150,
+                          "originalId": "Username",
+                          "id": "Username",
+                          "alias": "Username",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Username",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{current_subscriptioninfo.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Username\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
                         }
                       },
                       "key": "8ice3j6f83",
                       "canFreezeColumn": true,
                       "isDeprecated": false,
-                      "rightColumn": 30,
+                      "rightColumn": 64,
                       "textSize": "0.875rem",
                       "widgetId": "ar92myvkj6",
                       "minWidth": 450,
-                      "tableData": [
-                        {
-                          "step": "#1",
-                          "task": "Drop a table",
-                          "status": "✅",
-                          "action": ""
-                        },
-                        {
-                          "step": "#2",
-                          "task": "Create a query fetch_users with the Mock DB",
-                          "status": "--",
-                          "action": ""
-                        },
-                        {
-                          "step": "#3",
-                          "task": "Bind the query using => fetch_users.data",
-                          "status": "--",
-                          "action": ""
-                        }
-                      ],
+                      "tableData": "{{currentplan_info.data}}",
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "mf9v4fibbv",
@@ -460,27 +628,14 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input1",
-                      "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
-                      "topRow": 7,
-                      "bottomRow": 16,
-                      "parentRowSpace": 10,
+                      "topRow": 19,
                       "labelWidth": 5,
-                      "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
+                      "maxNum": "1",
                       "animateLoading": true,
-                      "parentColumnSpace": 14.404296875,
-                      "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 38,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -489,31 +644,46 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "labelPosition": "Top",
                       "labelStyle": "",
-                      "inputType": "TEXT",
+                      "inputType": "NUMBER",
                       "maxChars": "1",
                       "isDisabled": false,
-                      "key": "rn5a627mem",
-                      "labelTextSize": "0.875rem",
+                      "validation": "",
                       "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 58,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "4gh679troe",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "showStepArrows": false,
+                      "isVisible": true,
+                      "version": 2,
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "widgetName": "new_subscription",
+                      "displayName": "Input",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "bottomRow": 38,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "hideCard": false,
+                      "parentColumnSpace": 14.404296875,
+                      "dynamicTriggerPathList": [],
+                      "labelPosition": "Top",
+                      "key": "rn5a627mem",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 24,
+                      "widgetId": "4gh679troe",
                       "errorMessage": "Not a valid plan!",
                       "minWidth": 450,
-                      "isVisible": true,
                       "label": "New Subscription ID",
-                      "version": 2,
                       "parentId": "mf9v4fibbv",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
-                      "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
                       "defaultText": "",
@@ -553,12 +723,23 @@
               "originalTopRow": 0,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 46,
+              "originalBottomRow": 47,
               "minDynamicHeight": 10
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Listener Subscription Type_currentplan_info",
+              "name": "currentplan_info",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Listener Subscription Type",
